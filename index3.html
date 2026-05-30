@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubank</title>
+    
+    <style>
+        body{
+            font-family: serif, Helvetica, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+</style>
+
+<img src="https://www.mundorh.com.br/wp-content/uploads/2021/05/Novo-Logo-002.jpg" width="60px"></img>
+<img alt="Casal correndo na rua, ao redor tem muitas árvores" src="https://www.datocms-assets.com/120597/1779478115-tenisnovo_ambientada_3143-1.png?auto=format&crop=focalpoint&dpr=1&fit=crop&w=2000&q=60" loading="eager" class="chakra-image css-1qdsbgc" fetchpriority="high">
+
+</head>
+<script>
+
+
+function login(){
+    let usuario = document.getElementById("usuario").value;
+    let celular = document.getElementById("celular").value;
+    let cpf = document.getElementById("cpf").value;
+    let email = document.getElementById("email").value;
+    let email2 = document.getElementById("email2").value;
+
+    if(usuario === "Gui" && celular === "21980009282" && cpf === "18896916747" && email === email2){
+        alert("Login realizado com sucesso!");
+        mostrarHome();
+        esconderLogin();
+    }
+}
+
+function logout(){
+    let telaHome = document.getElementById("home").style.display = "none";
+    let telaLogin = document.getElementById("login").style.display = "block";
+}
+
+function mostrarHome(){
+    let telaHome = document.getElementById("home").style.display = "block";
+}
+
+function esconderLogin(){
+    let telaLogin = document.getElementById("login").style.display = "none";
+
+}{ 
+    const telaInicial = document.getElementById("home").style.display = "block";
+}
+
+</script>
+
+<body>
+
+    <section class="" id="login">
+        <div><h1>Abra sua conta Nubank</h1></div><br> 
+        <input type="text" id="usuario" placeholder="Nome Completo"><br></br>
+        <input type="text" id="celular" placeholder="Celular"><br></br>
+        <input type="text" id="cpf" placeholder="Digite seu CPF"><br></br>
+        <input type="text" id="email" placeholder="Digite seu email"><br></br>
+        <input type="text" id="email2" placeholder="Confirmação do email"><br></br>
+        <input type="button" value="Entrar" onclick="login()"><br></br>
+        
+    </section>
+
+    <section class="" id="home" style="display:none;">
+        <div><h1>Bem vindo ao Nubank</h1></div>
+
+    </section>
+
+</body>
+</html> 
